@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="25" height="32" tilewidth="32" tileheight="32" backgroundcolor="#7d7d7d">
+ <tileset firstgid="1" name="tileset32" tilewidth="32" tileheight="32">
+  <image source="../images/tileset32.png" width="320" height="320"/>
+ </tileset>
+ <layer name="map" width="25" height="32">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,
+1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,
+1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,
+1,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,
+1,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,1,1,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,
+1,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,1,
+1,0,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,1,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,
+1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,1,1,
+1,0,0,1,0,0,0,0,0,0,1,1,1,1,0,0,0,1,0,0,0,0,1,0,1,
+1,0,0,1,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,
+1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,
+1,0,0,0,0,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,0,1,0,1,1,
+1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,
+1,0,0,0,1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,1,
+1,0,0,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup name="objects" width="25" height="32">
+  <object name="Injector" x="712" y="64" width="16" height="32">
+   <properties>
+    <property name="7" value="violet"/>
+    <property name="color" value="violet"/>
+   </properties>
+  </object>
+  <object name="Injector" x="70" y="64" width="16" height="32">
+   <properties>
+    <property name="3" value="yellow"/>
+    <property name="color" value="yellow"/>
+   </properties>
+  </object>
+  <object name="Injector" x="682" y="256" width="16" height="32">
+   <properties>
+    <property name="6" value="blue"/>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object name="Injector" x="39" y="800" width="16" height="32">
+   <properties>
+    <property name="5" value="light_blue"/>
+    <property name="color" value="light_blue"/>
+   </properties>
+  </object>
+  <object name="Injector" x="743" y="960" width="16" height="32">
+   <properties>
+    <property name="1" value="red"/>
+    <property name="color" value="red"/>
+   </properties>
+  </object>
+  <object name="Injector" x="599" y="640" width="16" height="32">
+   <properties>
+    <property name="2" value="orange"/>
+    <property name="color" value="orange"/>
+   </properties>
+  </object>
+  <object name="Injector" x="296" y="576" width="16" height="32">
+   <properties>
+    <property name="4" value="green"/>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object name="End" x="728" y="449" width="16" height="32">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="Player" x="137" y="442" width="16" height="32">
+   <properties>
+    <property name="1" value="none"/>
+    <property name="2" value="none"/>
+    <property name="3" value="none"/>
+    <property name="4" value="none"/>
+    <property name="5" value="none"/>
+    <property name="6" value="none"/>
+    <property name="7" value="none"/>
+    <property name="_the" value="player"/>
+   </properties>
+  </object>
+  <object name="Pass" x="102" y="448" width="16" height="32">
+   <properties>
+    <property name="colorkey" value="violet"/>
+   </properties>
+  </object>
+  <object name="Pass" x="678" y="448" width="16" height="32">
+   <properties>
+    <property name="colorkey" value="red"/>
+   </properties>
+  </object>
+  <object name="Pass" x="103" y="544" width="16" height="32">
+   <properties>
+    <property name="colorkey" value="light_blue"/>
+   </properties>
+  </object>
+  <object name="Pass" x="103" y="512" width="16" height="32">
+   <properties>
+    <property name="colorkey" value="orange"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

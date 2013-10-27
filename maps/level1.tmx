@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="25" height="16" tilewidth="32" tileheight="32" backgroundcolor="#7d7d7d">
+ <tileset firstgid="1" name="tileset32" tilewidth="32" tileheight="32">
+  <image source="../images/tileset32.png" width="320" height="320"/>
+ </tileset>
+ <layer name="map" width="25" height="16">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,1,
+1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,1,
+1,0,0,0,0,0,0,0,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup name="objects" width="25" height="16">
+  <object name="Injector" x="151" y="128" width="16" height="32">
+   <properties>
+    <property name="7" value="violet"/>
+    <property name="color" value="violet"/>
+   </properties>
+  </object>
+  <object name="End" x="680" y="449" width="16" height="32">
+   <properties>
+    <property name="nextlevel" value="maps/level2.lua"/>
+   </properties>
+  </object>
+  <object name="Player" x="57" y="422" width="16" height="32">
+   <properties>
+    <property name="1" value="red"/>
+    <property name="2" value="orange"/>
+    <property name="3" value="yellow"/>
+    <property name="4" value="green"/>
+    <property name="5" value="light_blue"/>
+    <property name="6" value="blue"/>
+    <property name="7" value="none"/>
+    <property name="_the" value="player"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
