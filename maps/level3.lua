@@ -38,16 +38,16 @@ return {
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1,
         1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-        1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1,
-        1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1,
-        1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-        1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
-        1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1,
-        1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1,
-        1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1,
-        1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1,
-        1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-        1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1,
+        1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1,
+        1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+        1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+        1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1,
+        1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1,
+        1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1,
+        1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1,
+        1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+        1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1,
         1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1,
         1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
@@ -70,8 +70,8 @@ return {
           height = 32,
           visible = true,
           properties = {
-            ["6"] = "blue",
-            ["color"] = "blue"
+            ["2"] = "yellow",
+            ["color"] = "white"
           }
         },
         {
@@ -84,8 +84,8 @@ return {
           height = 32,
           visible = true,
           properties = {
-            ["2"] = "orange",
-            ["color"] = "orange"
+            ["5"] = "light_blue",
+            ["color"] = "light_blue"
           }
         },
         {
@@ -98,8 +98,8 @@ return {
           height = 32,
           visible = true,
           properties = {
-            ["4"] = "green",
-            ["color"] = "green"
+            ["3"] = "yellow",
+            ["color"] = "yellow"
           }
         },
         {
@@ -112,7 +112,7 @@ return {
           height = 32,
           visible = true,
           properties = {
-            ["nextlevel"] = "maps/level4.lua"
+            ["nextlevel"] = "end"
           }
         },
         {
@@ -125,13 +125,13 @@ return {
           height = 32,
           visible = true,
           properties = {
-            ["1"] = "black",
-            ["2"] = "black",
-            ["3"] = "black",
-            ["4"] = "black",
-            ["5"] = "black",
-            ["6"] = "black",
-            ["7"] = "black",
+            ["1"] = "none",
+            ["2"] = "none",
+            ["3"] = "none",
+            ["4"] = "none",
+            ["5"] = "none",
+            ["6"] = "none",
+            ["7"] = "none",
             ["_the"] = "player"
           }
         },
@@ -145,20 +145,7 @@ return {
           height = 32,
           visible = true,
           properties = {
-            ["colorkey"] = "violet"
-          }
-        },
-        {
-          name = "Pass",
-          type = "",
-          shape = "rectangle",
-          x = 1479,
-          y = 448,
-          width = 16,
-          height = 32,
-          visible = true,
-          properties = {
-            ["colorkey"] = "black"
+            ["colorkey"] = "yellow"
           }
         },
         {
@@ -171,7 +158,7 @@ return {
           height = 32,
           visible = true,
           properties = {
-            ["colorkey"] = "light_blue"
+            ["colorkey"] = "red"
           }
         },
         {
@@ -184,7 +171,7 @@ return {
           height = 32,
           visible = true,
           properties = {
-            ["colorkey"] = "orange"
+            ["colorkey"] = "violet"
           }
         },
         {
@@ -211,7 +198,7 @@ return {
           height = 32,
           visible = true,
           properties = {
-            ["colorkey"] = "violet"
+            ["colorkey"] = "blue"
           }
         },
         {
@@ -224,7 +211,7 @@ return {
           height = 32,
           visible = true,
           properties = {
-            ["colorkey"] = "violet"
+            ["colorkey"] = "yellow"
           }
         },
         {
@@ -237,7 +224,7 @@ return {
           height = 32,
           visible = true,
           properties = {
-            ["colorkey"] = "black"
+            ["colorkey"] = "orange"
           }
         },
         {
@@ -250,7 +237,7 @@ return {
           height = 32,
           visible = true,
           properties = {
-            ["colorkey"] = "black"
+            ["colorkey"] = "red"
           }
         },
         {
@@ -263,7 +250,7 @@ return {
           height = 32,
           visible = true,
           properties = {
-            ["colorkey"] = "black"
+            ["colorkey"] = "green"
           }
         },
         {
@@ -276,7 +263,163 @@ return {
           height = 32,
           visible = true,
           properties = {
-            ["colorkey"] = "black"
+            ["colorkey"] = "green"
+          }
+        },
+        {
+          name = "Injector",
+          type = "",
+          shape = "rectangle",
+          x = 55,
+          y = 64,
+          width = 16,
+          height = 32,
+          visible = true,
+          properties = {
+            ["3"] = "red",
+            ["color"] = "white"
+          }
+        },
+        {
+          name = "Injector",
+          type = "",
+          shape = "rectangle",
+          x = 1527,
+          y = 352,
+          width = 16,
+          height = 32,
+          visible = true,
+          properties = {
+            ["2"] = "orange",
+            ["color"] = "orange"
+          }
+        },
+        {
+          name = "Injector",
+          type = "",
+          shape = "rectangle",
+          x = 1527,
+          y = 256,
+          width = 16,
+          height = 32,
+          visible = true,
+          properties = {
+            ["1"] = "red",
+            ["color"] = "red"
+          }
+        },
+        {
+          name = "Injector",
+          type = "",
+          shape = "rectangle",
+          x = 1527,
+          y = 160,
+          width = 16,
+          height = 32,
+          visible = true,
+          properties = {
+            ["7"] = "violet",
+            ["color"] = "violet"
+          }
+        },
+        {
+          name = "Injector",
+          type = "",
+          shape = "rectangle",
+          x = 1527,
+          y = 64,
+          width = 16,
+          height = 32,
+          visible = true,
+          properties = {
+            ["6"] = "blue",
+            ["color"] = "blue"
+          }
+        },
+        {
+          name = "Injector",
+          type = "",
+          shape = "rectangle",
+          x = 851,
+          y = 96,
+          width = 16,
+          height = 32,
+          visible = true,
+          properties = {
+            ["1"] = "yellow",
+            ["2"] = "yellow",
+            ["3"] = "yellow",
+            ["4"] = "yellow",
+            ["5"] = "yellow",
+            ["6"] = "yellow",
+            ["7"] = "yellow",
+            ["color"] = "white"
+          }
+        },
+        {
+          name = "Pass",
+          type = "",
+          shape = "rectangle",
+          x = 711,
+          y = 320,
+          width = 16,
+          height = 32,
+          visible = true,
+          properties = {
+            ["colorkey"] = "red"
+          }
+        },
+        {
+          name = "Pass",
+          type = "",
+          shape = "rectangle",
+          x = 842,
+          y = 288,
+          width = 16,
+          height = 32,
+          visible = true,
+          properties = {
+            ["colorkey"] = "orange"
+          }
+        },
+        {
+          name = "Injector",
+          type = "",
+          shape = "rectangle",
+          x = 776,
+          y = 320,
+          width = 16,
+          height = 32,
+          visible = true,
+          properties = {
+            ["3"] = "orange",
+            ["color"] = "white"
+          }
+        },
+        {
+          name = "Pass",
+          type = "",
+          shape = "rectangle",
+          x = 102,
+          y = 160,
+          width = 16,
+          height = 32,
+          visible = true,
+          properties = {
+            ["colorkey"] = "yellow"
+          }
+        },
+        {
+          name = "Req",
+          type = "",
+          shape = "rectangle",
+          x = 31,
+          y = 319,
+          width = 71,
+          height = 67,
+          visible = true,
+          properties = {
+            ["colorkey"] = "red"
           }
         }
       }

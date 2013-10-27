@@ -24,6 +24,12 @@ LevelView = View:extend {
             bgm:play()
         end
     end;
+    
+    restart = function(self)
+        the.app.meta.nextlevel = self.levelName
+        self:levelCompleted()
+    end;
+
 
     levelCompleted = function(self)
         self.map.active = false
@@ -42,10 +48,11 @@ LevelView = View:extend {
                 promise:andThen(function()
                     the.app.view = EndGameView:new()
                 end)
+            else
+                promise:andThen(function()
+                    the.app.view = LevelView:new{levelName = the.app.meta.nextlevel}
+                end)
             end
-            promise:andThen(function()
-                the.app.view = LevelView:new{levelName = the.app.meta.nextlevel}
-            end)
             return
         end
     end;
