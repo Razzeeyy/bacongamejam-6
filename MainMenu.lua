@@ -34,6 +34,12 @@ MainMenu = View:extend {
             end;
         })
         self:add(MenuButton:new {
+            text = "Credits", x = 400, y = 340;
+            onMouseDown = function()
+                the.app.view = CreditsScreen:new{parent = self}
+            end;
+        })
+        self:add(MenuButton:new {
             text = "Exit", x = 400, y = 400;
             onMouseDown = function()
                 the.app:quit()

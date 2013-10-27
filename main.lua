@@ -11,6 +11,7 @@ require "MenuButton"
 require "MainMenu"
 require "VolumeMenu"
 require "EndGameView"
+require "CreditsScreen"
 
 SHADERS_AVAILABLE = false
 BGM_VOLUME = 0.5
