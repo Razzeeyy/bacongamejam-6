@@ -6,7 +6,9 @@ require "Player"
 require "Injector"
 require "Pass"
 require "End"
+require "MenuButton"
 require "MainMenu"
+require "VolumeMenu"
 
 SHADERS_AVAILABLE = false
 BGM_VOLUME = 0.5
@@ -47,22 +49,37 @@ the.app = App:new
     saturation = 50;
     luminosity = 75;
 
+    getSfxVolume = function()
+        return SFX_VOLUME
+    end;
+    getBgmVolume = function()
+        return BGM_VOLUME
+    end;
+
     onNew = function(self)
         --TODO: more sounds
         self.meta.interactionSound = love.audio.newSource("sounds/interaction.ogg", "static")
         self.meta.movementSound = love.audio.newSource("sounds/movement.ogg", "static")
         self.meta.jumpSound = love.audio.newSource("sounds/jump1.ogg", "static")
 
-        self.meta.interactionSound:setVolumeLimits(SFX_VOLUME, SFX_VOLUME)
-        self.meta.movementSound:setVolumeLimits(SFX_VOLUME, SFX_VOLUME)
-        self.meta.jumpSound:setVolumeLimits(SFX_VOLUME, SFX_VOLUME)
+        
+        self.setSfxVolume = function(_, v)
+            SFX_VOLUME = v
+            the.app.meta.interactionSound:setVolumeLimits(SFX_VOLUME, SFX_VOLUME)
+            the.app.meta.movementSound:setVolumeLimits(SFX_VOLUME, SFX_VOLUME)
+            the.app.meta.jumpSound:setVolumeLimits(SFX_VOLUME, SFX_VOLUME)
+        end
+        self:setSfxVolume(SFX_VOLUME)
 
         self.meta.bgMusic = love.audio.newSource("sounds/45.mp3", "static")
         self.meta.bgMusic:setLooping(true)
         self.meta.bgMusicEndRound = love.audio.newSource("sounds/1.mp3", "static")
         
-        self.meta.bgMusic:setVolumeLimits(BGM_VOLUME, BGM_VOLUME)
-        self.meta.bgMusicEndRound:setVolumeLimits(BGM_VOLUME, BGM_VOLUME)
+        self.setBgmVolume = function(_, v)
+            BGM_VOLUME = v
+            the.app.meta.bgMusic:setVolumeLimits(BGM_VOLUME, BGM_VOLUME)
+            the.app.meta.bgMusicEndRound:setVolumeLimits(BGM_VOLUME, BGM_VOLUME)
+        end
 
         --TODO: FIXME: fix the shader based mask drifting and enable this
         --SHADERS_AVAILABLE = love.graphics.isSupported("pixeleffect")
