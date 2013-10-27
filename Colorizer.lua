@@ -60,6 +60,10 @@ Colorizer = PARENT:extend{
         local h = self.height
         local w = h
         x = x-self.width/2
+        if self.width == 24 then --hacky player glow offset fix
+            x = x+self.width/2-4
+        end
+
 
         local function stencil()
             love.graphics.circle("fill", x+w/2, y+h/2, h/2, 32)
