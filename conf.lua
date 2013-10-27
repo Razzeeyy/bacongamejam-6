@@ -8,10 +8,10 @@ DEBUG = true --enables/disables Zoetrope's debug console
 RELEASE = false --if enabled saves will go to the LOVE save directory, if t.identity is defined below
 
 function love.conf(t)
-    t.title = "anew engine"    -- The title of the window the game is in (string)
+    t.title = "Colors Of A Rainbow"    -- The title of the window the game is in (string)
     t.author = "Razzeeyy"       -- The author of the game (string)
     t.url = nil                 -- The website of the game (string)
-    t.identity = "anew"            -- The name of the save directory (string)
+    t.identity = "colorsofarainbow"            -- The name of the save directory (string)
     t.version = "0.8.0"         -- The LÖVE version this game was made for (string)
     t.console = false           -- Attach a console (boolean, Windows only)
     t.release = RELEASE         -- Enable release mode (boolean)
