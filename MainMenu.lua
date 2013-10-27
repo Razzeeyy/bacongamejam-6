@@ -4,7 +4,7 @@ MainMenu = View:extend {
         self:add(Button:new{
             width=50, height=50;
             onMouseDown = function()
-                the.app.view = LevelView:new{levelName = "maps/level3.lua"}
+                the.app.view = EasterEggScreen:new{parent = self}
             end;
         })
         self:add(MenuButton:new {

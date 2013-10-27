@@ -3,9 +3,9 @@
 collectgarbage("setpause", 110)
 collectgarbage("setstepmul", 200)
 
-STRICT = true
-DEBUG = true --enables/disables Zoetrope's debug console
-RELEASE = false --if enabled saves will go to the LOVE save directory, if t.identity is defined below
+STRICT = false
+DEBUG = false --enables/disables Zoetrope's debug console
+RELEASE = true --if enabled saves will go to the LOVE save directory, if t.identity is defined below
 
 function love.conf(t)
     t.title = "Colors Of A Rainbow"    -- The title of the window the game is in (string)

@@ -12,6 +12,7 @@ require "MainMenu"
 require "VolumeMenu"
 require "EndGameView"
 require "CreditsScreen"
+require "EasterEggScreen"
 
 SHADERS_AVAILABLE = false
 BGM_VOLUME = 0.5
