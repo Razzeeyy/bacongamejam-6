@@ -38,6 +38,11 @@ LevelView = View:extend {
             bgme:play()
         end
         if the.app.meta.nextlevel then
+            if the.app.meta.nextlevel == "end" then
+                promise:andThen(function()
+                    the.app.view = EndGameView:new()
+                end)
+            end
             promise:andThen(function()
                 the.app.view = LevelView:new{levelName = the.app.meta.nextlevel}
             end)

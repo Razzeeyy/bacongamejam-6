@@ -9,6 +9,7 @@ require "End"
 require "MenuButton"
 require "MainMenu"
 require "VolumeMenu"
+require "EndGameView"
 
 SHADERS_AVAILABLE = false
 BGM_VOLUME = 0.5
@@ -74,11 +75,13 @@ the.app = App:new
         self.meta.bgMusic = love.audio.newSource("sounds/45.mp3", "static")
         self.meta.bgMusic:setLooping(true)
         self.meta.bgMusicEndRound = love.audio.newSource("sounds/1.mp3", "static")
+        self.meta.bgMusicPunk = love.audio.newSource("sounds/Punk.mp3", "static")
         
         self.setBgmVolume = function(_, v)
             BGM_VOLUME = v
             the.app.meta.bgMusic:setVolumeLimits(BGM_VOLUME, BGM_VOLUME)
             the.app.meta.bgMusicEndRound:setVolumeLimits(BGM_VOLUME, BGM_VOLUME)
+            the.app.meta.bgMusicPunk:setVolumeLimits(BGM_VOLUME, BGM_VOLUME)
         end
 
         --TODO: FIXME: fix the shader based mask drifting and enable this
