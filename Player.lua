@@ -22,11 +22,13 @@ local onFoot = {
             self.acceleration.x = -self.accel
             playMoveSound = true
             animToPlay = "left"
+            self.timeSinceLastInput = 0
         end
         if k:pressed(self.keyRight) or k:pressed "d" then
             self.acceleration.x = self.accel
             playMoveSound = true
             animToPlay = "right"
+            self.timeSinceLastInput = 0
         end
         if self.velocity.x > self.speed then
             self.velocity.x = self.speed
@@ -55,6 +57,7 @@ local onFoot = {
                     sound:play()
                 end
             end
+            self.timeSinceLastInput = 0
         end
         if not self.onGround then
             self.airTime = self.airTime + dt
@@ -62,6 +65,12 @@ local onFoot = {
         
         if not self.onGround or math.abs(self.velocity.y) > 32 then
             animToPlay = "jump"
+        end
+        
+        self.timeSinceLastInput = self.timeSinceLastInput + dt
+
+        if self.timeSinceLastInput > self.idleThreshold then
+            animToPlay = "idle"
         end
 
         return animToPlay
@@ -158,6 +167,12 @@ Player = Colorizer:extend{
             fps = 9;
             loops = true;
         };
+        ["idle"] = {
+            name = "idle";
+            frames = {};
+            fps = 7;
+            loops = true;
+        };
     };
     glowMask = "images/playermask.png";
     glowAlpha = 200;
@@ -170,6 +185,8 @@ Player = Colorizer:extend{
         color.none;
         color.none;
     };
+    idleThreshold = 10;
+    timeSinceLastInput = 0;
     setBehavior = function(self, behavior)
         self.behavior = behavior
         return behavior.init(self)
@@ -185,6 +202,10 @@ Player = Colorizer:extend{
         self.keyJump = "up"
         self.keyUse = "down"
         
+        for i=14, 45 do
+            self.sequences.idle.frames[i-13] = i
+        end
+
         --FIXME: the rainbow glow is offset incorrectly due to new playersizes
         self.width = 24
         self.height = 32
