@@ -8,8 +8,8 @@ require "Pass"
 require "End"
 
 SHADERS_AVAILABLE = false
-BGM_VOLUME = 1
-SFX_VOLUME = 1
+BGM_VOLUME = 0.5
+SFX_VOLUME = 0.5
 --TODO:
 --make GUI
 --make use of volume variables in settings
@@ -17,7 +17,7 @@ SFX_VOLUME = 1
 
 the.app = App:new
 {
-    name = "anew engine",
+    name = "Colors Of A Rainbow",
     icon = nil,
     fps = 60,
     timeScale = 1.0,
@@ -27,9 +27,17 @@ the.app = App:new
         self.meta.interactionSound = love.audio.newSource("sounds/interaction.ogg", "static")
         self.meta.movementSound = love.audio.newSource("sounds/movement.ogg", "static")
         self.meta.jumpSound = love.audio.newSource("sounds/jump1.ogg", "static")
+
+        self.meta.interactionSound:setVolumeLimits(SFX_VOLUME, SFX_VOLUME)
+        self.meta.movementSound:setVolumeLimits(SFX_VOLUME, SFX_VOLUME)
+        self.meta.jumpSound:setVolumeLimits(SFX_VOLUME, SFX_VOLUME)
+
         self.meta.bgMusic = love.audio.newSource("sounds/45.mp3", "static")
         self.meta.bgMusic:setLooping(true)
         self.meta.bgMusicEndRound = love.audio.newSource("sounds/1.mp3", "static")
+        
+        self.meta.bgMusic:setVolumeLimits(BGM_VOLUME, BGM_VOLUME)
+        self.meta.bgMusicEndRound:setVolumeLimits(BGM_VOLUME, BGM_VOLUME)
 
         --TODO: FIXME: fix the shader based mask drifting and enable this
         --SHADERS_AVAILABLE = love.graphics.isSupported("pixeleffect")
