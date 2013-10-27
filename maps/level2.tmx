@@ -84,7 +84,7 @@
   </object>
   <object name="End" x="728" y="449" width="16" height="32">
    <properties>
-    <property name="" value=""/>
+    <property name="nextlevel" value="maps/level3.lua"/>
    </properties>
   </object>
   <object name="Player" x="137" y="442" width="16" height="32">

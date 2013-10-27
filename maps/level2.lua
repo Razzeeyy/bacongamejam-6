@@ -184,7 +184,7 @@ return {
           height = 32,
           visible = true,
           properties = {
-            [""] = ""
+            ["nextlevel"] = "maps/level3.lua"
           }
         },
         {

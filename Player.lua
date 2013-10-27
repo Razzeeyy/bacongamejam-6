@@ -17,13 +17,16 @@ local onFoot = {
         local k = the.keys
         self.acceleration.x = 0
         local playMoveSound = false
-        if k:pressed(self.keyLeft) then
+        local animToPlay = "stand"
+        if k:pressed(self.keyLeft) or k:pressed "a" then
             self.acceleration.x = -self.accel
             playMoveSound = true
+            animToPlay = "left"
         end
-        if k:pressed(self.keyRight) then
+        if k:pressed(self.keyRight) or k:pressed "d" then
             self.acceleration.x = self.accel
             playMoveSound = true
+            animToPlay = "right"
         end
         if self.velocity.x > self.speed then
             self.velocity.x = self.speed
@@ -40,7 +43,7 @@ local onFoot = {
             end
         end
 
-        if k:pressed(self.keyJump) then
+        if k:pressed(self.keyJump) or k:pressed "w" or k:pressed " " then
             if self.onGround or (self.airTime < self.jumpTime) then 
                 self.velocity.y = self.jump
                 self.onGround = false
@@ -56,6 +59,12 @@ local onFoot = {
         if not self.onGround then
             self.airTime = self.airTime + dt
         end
+        
+        if not self.onGround or math.abs(self.velocity.y) > 32 then
+            animToPlay = "jump"
+        end
+
+        return animToPlay
     end;
     collide = function(self, other, xOverlap, yOverlap)
         if not other:instanceOf(Tile) then
@@ -127,10 +136,28 @@ Player = Colorizer:extend{
     sequences = {
         ["stand"] = {
             name = "stand";
-            frames = {1, 2, 3, 4, 5};
-            fps = 2;
+            frames = {1, 2, 3, 4--[[, 5]]};
+            fps = 7;
             loops = true;
-        }
+        };
+        ["right"] = {
+            name = "right";
+            frames = {5,6,7};
+            fps = 7;
+            loops = true;
+        };
+        ["left"] = {
+            name = "left";
+            frames = {8, 9, 10};
+            fps = 7;
+            loops = true;
+        };
+        ["jump"] = {
+            name = "jump";
+            frames = {11, 12, 13};
+            fps = 9;
+            loops = true;
+        };
     };
     glowMask = "images/playermask.png";
     glowAlpha = 200;
@@ -157,11 +184,15 @@ Player = Colorizer:extend{
         self.keyRight = "right"
         self.keyJump = "up"
         self.keyUse = "down"
-
+        
+        --FIXME: the rainbow glow is offset incorrectly due to new playersizes
+        self.width = 24
+        self.height = 32
+    --[[
         local unit = the.view.map.spriteWidth
         self.width = unit/2
         self.height = unit
-        
+    ]]
         --remember position where spawned
         self.spawnPoint = {x = self.x, y = self.y}
      --[[   
@@ -191,7 +222,10 @@ Player = Colorizer:extend{
             end
             return n
         end
-        return self:behave("update", dt)
+        local anim = self:behave("update", dt)
+        if anim ~= self.currentName then
+            self:play(anim)
+        end
     end;
     onCollide = function(self, other, xOverlap, yOverlap)
         return self:behave("collide", other, xOverlap, yOverlap)
